@@ -62,6 +62,11 @@ function showQuestion() {
         button.innerHTML = answer.Text;
         button.classList.add("btn");
         answerButton.appendChild(button);
+        //Laskee OIKEAT vastaukset
+        if(answer.correct){
+            button.dataset.correct = answer.correct;
+        }
+        button.addEventListener("click", selectAnswer);
     })
 }
 
@@ -74,7 +79,16 @@ function resetState() {
     }
 }
 
-
+//lisätään CORRECT tai INCORRECT luokat riippuen onko vastaus OIKEIN vai VÄÄRIN!
+function selectAnswer() {
+    const selectedBtn = e.target;
+    const isCorrect = selectedBtn.dataset.correct === "true";
+    if(isCorrect){
+        selectedBtn.classList.add("correct");
+    } else {
+        selectedBtn.classList.add("incorrect");
+    }
+}
 
 
 //kutsutaan pelin aloitus funktiota lopussa. 
