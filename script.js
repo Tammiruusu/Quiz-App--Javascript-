@@ -2,30 +2,39 @@
 //muista merkitä CORRECT : TRUE oikeisiin vastauksiin! 
 const questions = [
     {
-        kysymys: "Kysymys teksti?",
+        kysymys: "Milloin Bram Stokerin Dracula ilmestyi?",
         answers: [
-            { Text: "vastaus 1", correct: false},
-            { Text: "vastaus 2", correct: true},
-            { Text: "vastaus 3", correct: false},
-            { Text: "vastaus 4", correct: false}
+            { Text: "1867", correct: false},
+            { Text: "1897", correct: true},
+            { Text: "1921", correct: false},
+            { Text: "1948", correct: false}
         ]
     },
      {
-        kysymys: "Kysymys teksti2?",
+        kysymys: "Draculasta tehtiin luvaton Kopio Saksassa vuonna 1922, mikä se oli nimeltään?",
         answers: [
-            { Text: "vastaus 1", correct: false},
-            { Text: "vastaus 2", correct: true},
-            { Text: "vastaus 3", correct: false},
-            { Text: "vastaus 4", correct: false}
+            { Text: "House of Dracula", correct: false},
+            { Text: "Jonathan", correct: false},
+            { Text: "Nosferatu", correct: true},
+            { Text: "Vampirella", correct: false}
         ]
     },
      {
-        kysymys: "Kysymys teksti3?",
+        kysymys: "Kuka Vampyyri oli ensimmäinen kirjallisuudessa?",
         answers: [
-            { Text: "vastaus 1", correct: false},
-            { Text: "vastaus 2", correct: true},
-            { Text: "vastaus 3", correct: false},
-            { Text: "vastaus 4", correct: false}
+            { Text: "Nosferatu", correct: false},
+            { Text: "Dracula", correct: false},
+            { Text: "Lestat", correct: false},
+            { Text: "Carmilla", correct: true}
+        ]
+    },
+     {
+        kysymys: "Kuka näytteli Draculaa valkokankaalla ensimmäiseksi?",
+        answers: [
+            { Text: "Bela Lugosi", correct: false},
+            { Text: "Christopher Lee", correct: false},
+            { Text: "John Carradine", correct: false},
+            { Text: "Max Schreck", correct: true}
         ]
     }
 ];
